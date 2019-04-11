@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-<html lang="en-us" class="no-js">
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
 
-  {% include head.html %}
+{%- include head.html -%}
 
-  <body>
-    {% if page.url != '/index.html' %}
-      <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
-      {% include sidebar-nav.html %}
-      {% include menu.html %}
-    {% endif %}
+<body>
 
-    {{ content }}
+    {%- include header.html -%}
 
-    {% if page.url != '/index.html' %}
-      {% include sidebar-toggle.html %}
-    {% endif %}
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
 
-    {% if page.url == '/index.html' %}
-      {% include subscribe.html %}
-      {% include footer.html %}
-    {% endif %}
+            {%- include about.html -%}
 
-    {% include footer-scripts.html %}
-  </body>
+            {%- if site.data.projects.size > 0 -%}
+                {%- include projects.html -%}
+            {%- endif -%}
+
+            {%- if site.data.experience.size > 0 -%}
+                {%- include experience.html -%}
+            {%- endif -%}
+
+            {%- if site.data.education.size > 0 -%}
+                {%- include education.html -%}
+            {%- endif -%}
+
+            {%- include more.html -%}
+
+        </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <a href="https://github.com/sproogen/resume-theme" target="_blank">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"
+        alt="Fork me on GitHub">
+    </a>
+
+</body>
+
 </html>
