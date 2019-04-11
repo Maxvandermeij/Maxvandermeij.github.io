@@ -3,30 +3,30 @@ repository: maxvandermeij/github.io
 # favicon: images/favicon.ico
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Max van der Meij 
+title: DevOps Engineer
+email: max.van.der.meij@devoteam.com
+website: vexit.nl
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+#twitter_username: 
+github_username:  maxvandermeij
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: chillwildlife
-linkedin_username: jameswgrant
+#instagram_username: 
+linkedin_username: maxvandermeij
 # pinterest_username: jekyll
-youtube_username: globalmtb
+#youtube_username: 
 # googleplus_username: +jekyll
 
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+ I am a technology generalist with the ability to understand and effectively use new technology quickly. My work-time hobby is designing and creating practical solutions for IT development and operations. While doing so, I enjoy questioning the current way of doing things and automating tasks as much as possible. In addition, sharing knowledge and in turn learning from others is part of my way of work. 
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I am most skilled in: <mark>Containerisation</mark> and <mark>Orchestration</mark>
 
 # Projects Section
 # projects_title: Projects
@@ -40,14 +40,14 @@ about_content: | # this will include new lines to allow paragraphs
 # More Section
 # more_title: A Little More About Me
 more_content: | # this will include new lines to allow paragraphs
-  Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-   - Rock climbing
-   - Gaming
-   - Knitting
-   - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+  Alongside my interests in development and operations engineering some of my other interests and hobbies are:
+   - Bouldering 
+   - Gardening
+   - Cooking
+   - Board-gaming
 
 # Footer
-footer_show_references: true
+footer_show_references: false 
 
 # Build settings
 remote_theme: sproogen/resume-theme
@@ -57,4 +57,3 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
